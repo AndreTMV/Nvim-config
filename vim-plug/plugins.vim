@@ -1,5 +1,7 @@
 call plug#begin('~/.config/nvim/autoload/plugged')
 
+    let g:coc_global_extensions = ['coc-tslint-plugin', 'coc-tsserver', 'coc-css', 'coc-html', 'coc-json', 'coc-prettier']  " 
+
     " Better Syntax Support 
     Plug 'sheerun/vim-polyglot' 
 
@@ -15,6 +17,10 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     Plug 'lyuts/vim-rtags'
     Plug 'honza/vim-snippets'
     Plug 'puremourning/vimspector'
+    Plug 'voldikss/vim-floaterm'
+    Plug 'tpope/vim-commentary'
+    Plug 'mkitt/tabline.vim'
+    Plug 'fatih/vim-go'
 
     "Themes" 
     Plug 'liuchengxu/space-vim-dark' 
@@ -27,6 +33,11 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     Plug 'Rigellute/rigel'
     Plug 'relastle/bluewery.vim'
 
+    "Java script
+    Plug 'yuezk/vim-js'
+    Plug 'HerringtonDarkholme/yats.vim'
+    Plug 'maxmellon/vim-jsx-pretty'
+    
     " Keeping up to date with master
     Plug 'neoclide/coc.nvim', {'do': 'yarn install --frozen-lockfile'}
 

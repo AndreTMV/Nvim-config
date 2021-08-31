@@ -30,3 +30,6 @@ nnoremap <Leader>dh :call vimspector#ToggleBreakpoint()<CR>
 nnoremap <Leader>de :call vimspector#ToggleConditionalBreakpoint()<CR>
 nnoremap <Leader>de :call vimspector#ClearBreakpoints()<CR>
 
+"Float terminal
+let g:floaterm_keymap_new = '<Leader>ft'
+let g:floaterm_keymap_toggle = '<Leader>t'
