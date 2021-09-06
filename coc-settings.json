@@ -1,5 +1,5 @@
 {
-  "coc.preferences.formatOnSaveFiletypes": ["css", "markdown", "javascript", "graphql", "html", "yaml",  "json", "python", "sql", "c++", "go", "ruby"],
+  "coc.preferences.formatOnSaveFiletypes": ["css", "markdown", "javascript", "graphql", "html", "yaml",  "json", "python", "sql", "c++", "go", "ruby", "cmake", "cpp", "c"],
 
   // python config
   "python.linting.enabled": true,
@@ -22,6 +22,12 @@
             }
           }
       },
+      // Bash
+    "bash": {
+    "command": "bash-language-server",
+    "args": ["start"],
+    "filetypes": ["sh"]
+     },
       // Go
       "golang": {
       "command": "gopls",
@@ -34,6 +40,7 @@
     "args" : ["up", "--method", "stdio"],
     "filetypes": ["sql", "mysql"]
     },
+    // CMake
      "cmake": {
         "command": "cmake-language-server",
         "filetypes": ["cmake"],
