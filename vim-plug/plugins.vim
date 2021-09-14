@@ -1,26 +1,44 @@
 call plug#begin('~/.config/nvim/autoload/plugged')
 
-    let g:coc_global_extensions = ['coc-tslint-plugin', 'coc-tsserver', 'coc-css', 'coc-html', 'coc-json', 'coc-prettier']  " 
+    let g:coc_global_extensions = ['coc-tslint-plugin', 'coc-tsserver', 'coc-css', 'coc-html', 'coc-json', 'coc-prettier']   
 
     " Better Syntax Support 
     Plug 'sheerun/vim-polyglot' 
+
+    " status bar
+    Plug 'maximbaz/lightline-ale'
+    Plug 'itchyny/lightline.vim'
+    Plug 'shinchu/lightline-gruvbox.vim'
 
     " File Explorer 
     Plug 'scrooloose/nerdtree' 
 
     " Auto Pairs" 
     Plug 'jiangmiao/auto-pairs' 
+    Plug 'alvan/vim-closetag'
+    Plug 'tpope/vim-surround'
+
+    " tmux
+    Plug 'benmills/vimux'
+    Plug 'christoomey/vim-tmux-navigator' 
+
+    " test
+    Plug 'tyewang/vimux-jest-test'
+    Plug 'janko-m/vim-test'
 
     "IDE" 
+    Plug 'editorconfig/editorconfig-vim'
+    Plug 'junegunn/fzf'
+    Plug 'junegunn/fzf.vim'
+    Plug 'mhinz/vim-signify'
     Plug 'easymotion/vim-easymotion' 
-    Plug 'christoomey/vim-tmux-navigator' 
     Plug 'lyuts/vim-rtags'
     Plug 'honza/vim-snippets'
     Plug 'puremourning/vimspector'
     Plug 'voldikss/vim-floaterm'
     Plug 'tpope/vim-commentary'
-    Plug 'mkitt/tabline.vim'
     Plug 'fatih/vim-go'
+    Plug 'yggdroot/indentline'
 
     "Themes" 
     Plug 'liuchengxu/space-vim-dark' 
@@ -43,5 +61,9 @@ call plug#begin('~/.config/nvim/autoload/plugged')
 
     "Ranger
     Plug 'kevinhwang91/rnvimr', {'do': 'make sync'}
+
+    " git
+    Plug 'tpope/vim-fugitive'    
+    Plug 'tpope/vim-repeat'
 
 call plug#end()

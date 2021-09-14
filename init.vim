@@ -12,11 +12,3 @@ source $HOME/.config/nvim/themes/gruvbox.vim
 "source $HOME/.config/nvim/themes/dogrun.vim
 source $HOME/.config/nvim/plug-config/coc.vim
 source $HOME/.config/nvim/plug-config/rnvimr.vim
-
-hi TabLine      ctermfg=Black  ctermbg=DarkGray     cterm=NONE
-hi TabLineFill  ctermfg=Black  ctermbg=DarkGray     cterm=NONE
-hi TabLineSel   ctermfg=Black  ctermbg=Cyan  cterm=NONE
-let g:tablineclosebutton=1
-" disable vim-go :GoDef short cut (gd)
-" this is handled by LanguageClient [LC]
-let g:go_def_mapping_enabled = 0
