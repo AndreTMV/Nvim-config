@@ -1,5 +1,6 @@
 call plug#begin('~/.config/nvim/autoload/plugged')
 
+    let g:cmake_link_compile_commands = 1
     let g:coc_global_extensions = ['coc-tslint-plugin', 'coc-tsserver', 'coc-css', 'coc-html', 'coc-json', 'coc-prettier']   
 
     " Better Syntax Support 
@@ -28,10 +29,7 @@ call plug#begin('~/.config/nvim/autoload/plugged')
 
     "IDE" 
     Plug 'editorconfig/editorconfig-vim'
-    Plug 'junegunn/fzf'
-    Plug 'junegunn/fzf.vim'
     Plug 'mhinz/vim-signify'
-    Plug 'easymotion/vim-easymotion' 
     Plug 'lyuts/vim-rtags'
     Plug 'honza/vim-snippets'
     Plug 'puremourning/vimspector'
@@ -54,7 +52,11 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     Plug 'yuezk/vim-js'
     Plug 'HerringtonDarkholme/yats.vim'
     Plug 'maxmellon/vim-jsx-pretty'
-    
+
+    "Cmake
+    Plug 'cdelledonne/vim-cmake'
+    Plug 'antoinemadec/FixCursorHold.nvim'
+
     " Keeping up to date with master
     Plug 'neoclide/coc.nvim', {'do': 'yarn install --frozen-lockfile'}
 

@@ -1,11 +1,24 @@
 let mapleader=" "
 
+"Moving up and down
+nnoremap <A-j> :m .+1<CR>==
+nnoremap <A-k> :m .-2<CR>==
+inoremap <A-j> <Esc>:m .+1<CR>==gi
+inoremap <A-k> <Esc>:m .-2<CR>==gi
+vnoremap <A-j> :m '>+1<CR>gv=gv
+vnoremap <A-k> :m '<-2<CR>gv=gv
+
+"Cmake
+nmap <Leader>cg :CMakeGenerate<cr>
+nmap <Leader>cb :CMakeBuild<cr>
+
 " split resize
 nnoremap <Leader>> 10<C-w>>
 nnoremap <Leader>< 10<C-w><
 
 " quick semi
-nnoremap <Leader>e &a;<Esc>
+nnoremap <Leader>u &a;<Esc>
+
 "NerdTree" 
 nmap <Leader>nt :NERDTreeFind<CR>
 
@@ -22,9 +35,6 @@ inoremap <Leader>jj <ESC>
 "Visual mode
 vnoremap <Leader>e <ESC>
 
-" plugs
-map <Leader>p :Files<CR>
-map <Leader>ag :Ag<CR>
 
 " tmux navigator
 nmap <silent> <Leader><C-h> :TmuxNavigateLeft<cr>
@@ -51,7 +61,6 @@ map <Leader>ob :Buffers<cr>
 " faster scrolling
 nnoremap <C-j> 10<C-e>
 nnoremap <C-k> 10<C-y>
-nmap <Leader>s <Plug>(easymotion-s2) 
 
 " git 
 nnoremap <Leader>G :G<cr>
