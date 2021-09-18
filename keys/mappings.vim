@@ -5,7 +5,7 @@ nnoremap <Leader>> 10<C-w>>
 nnoremap <Leader>< 10<C-w><
 
 " quick semi
-nnoremap <Leader>pc &a;<Esc>
+nnoremap <Leader>e &a;<Esc>
 "NerdTree" 
 nmap <Leader>nt :NERDTreeFind<CR>
 
@@ -21,10 +21,6 @@ inoremap <Leader>jj <ESC>
 
 "Visual mode
 vnoremap <Leader>e <ESC>
-
-"Float terminal
-let g:floaterm_keymap_new = '<Leader>ft'
-let g:floaterm_keymap_toggle = '<Leader>t'
 
 " plugs
 map <Leader>p :Files<CR>
@@ -81,7 +77,7 @@ function! OpenTerminal()
     execute "q"
   else
     " open terminal
-    execute "vsp term://zsh"
+    execute "vsp term://bash"
 
     " turn off numbers
     execute "set nonu"

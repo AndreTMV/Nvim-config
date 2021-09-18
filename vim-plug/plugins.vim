@@ -35,7 +35,6 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     Plug 'lyuts/vim-rtags'
     Plug 'honza/vim-snippets'
     Plug 'puremourning/vimspector'
-    Plug 'voldikss/vim-floaterm'
     Plug 'tpope/vim-commentary'
     Plug 'fatih/vim-go'
     Plug 'yggdroot/indentline'
