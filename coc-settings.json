@@ -22,5 +22,6 @@
             }
           }
       }
-  }
+  },
+  "coc.preferences.extensionUpdateCheck": "never"
 }

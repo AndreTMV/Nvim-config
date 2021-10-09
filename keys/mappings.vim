@@ -9,8 +9,8 @@ vnoremap <A-j> :m '>+1<CR>gv=gv
 vnoremap <A-k> :m '<-2<CR>gv=gv
 
 "Cmake
-nmap <Leader>cg :CMakeGenerate<cr>
-nmap <Leader>cb :CMakeBuild<cr>
+nmap <Leader><F9> :CMakegenerate<cr>
+nmap <Leader><F8> :CMakebuild<cr>
 
 " split resize
 nnoremap <Leader>> 10<C-w>>
@@ -69,8 +69,6 @@ nnoremap <Leader>gl :Gpull<cr>
 " run current file
 nnoremap <Leader>x :!node %<cr>
 nnoremap <Leader>y :!python3 %<CR>
-autocmd FileType python map <buffer> <F9> :w<CR>:!clear;python %<CR>
-autocmd FileType python imap <buffer> <F9> <esc>:w<CR>:!clear;python %<CR>
 
 set splitright
 function! OpenTerminal()
