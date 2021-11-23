@@ -1,15 +1,14 @@
 call plug#begin('~/.config/nvim/autoload/plugged')
 
     let g:cmake_link_compile_commands = 1
-    let g:coc_global_extensions = ['coc-tslint-plugin', 'coc-tsserver', 'coc-css', 'coc-html', 'coc-json', 'coc-prettier']   
+    let g:coc_global_extensions = ['coc-tslint-plugin', 'coc-tsserver', 'coc-css', 'coc-html', 'coc-json', 'coc-prettier', 'coc-pyright', 'coc-cmake', 'coc-vimlsp', 'coc-snippets']   
 
     " Better Syntax Support 
     Plug 'sheerun/vim-polyglot' 
 
     " status bar
-    Plug 'maximbaz/lightline-ale'
-    Plug 'itchyny/lightline.vim'
-    Plug 'shinchu/lightline-gruvbox.vim'
+    Plug 'vim-airline/vim-airline'
+    Plug 'vim-airline/vim-airline-themes'
 
     " File Explorer 
     Plug 'scrooloose/nerdtree' 
