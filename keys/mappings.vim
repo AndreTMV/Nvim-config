@@ -16,6 +16,9 @@ nmap <Leader><F8> :CMakebuild<cr>
 nnoremap <Leader>> 10<C-w>>
 nnoremap <Leader>< 10<C-w><
 
+"tab instead of %
+noremap <TAB> %
+
 " Abrir terminal
 map <F2> :belowright terminal<CR>
 
@@ -69,6 +72,8 @@ nnoremap <Leader>gl :Gpull<cr>
 " run current file
 nnoremap <Leader>x :!node %<cr>
 nnoremap <Leader>y :!python3 %<CR>
+" open ghcup in the current buffer
+nnoremap <Leader>g :GHCup<CR>
 
 set splitright
 function! OpenTerminal()

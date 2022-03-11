@@ -46,6 +46,12 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     Plug 'haishanh/night-owl.vim'
     Plug 'Rigellute/rigel'
     Plug 'relastle/bluewery.vim'
+    Plug 'folke/tokyonight.nvim', { 'branch': 'main' }
+    Plug 'bluz71/vim-nightfly-guicolors'
+
+    "Icons
+    Plug 'ryanoasis/vim-devicons'
+    Plug 'tiagofumo/vim-nerdtree-syntax-highlight'
 
     "Java script
     Plug 'yuezk/vim-js'
@@ -65,5 +71,9 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     " git
     Plug 'tpope/vim-fugitive'    
     Plug 'tpope/vim-repeat'
+
+    "Haskell
+    Plug 'hasufell/ghcup.vim'
+    Plug 'rbgrouleff/bclose.vim'
 
 call plug#end()
